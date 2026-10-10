@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تقرير عملياتي سري جداً | قطاع الشيرف</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0e13;--panel:#10161d;--panel2:#141c25;--line:#263243;--gold:#c9a24b;--gold2:#e3c37a;--text:#e7eaef;--mut:#8996a8;--red:#e0524b;--grn:#3fb37f;--grid:rgba(201,162,75,.045);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#ebe6d8;--panel:#f8f5ea;--panel2:#f1ecdc;--line:#cdc3a8;--gold:#8a6a1c;--gold2:#6f5412;--text:#1b2330;--mut:#5b6575;--red:#b3261e;--grn:#1f7a4f;--grid:rgba(90,70,20,.06)}}
+:root[data-theme="light"]{--bg:#ebe6d8;--panel:#f8f5ea;--panel2:#f1ecdc;--line:#cdc3a8;--gold:#8a6a1c;--gold2:#6f5412;--text:#1b2330;--mut:#5b6575;--red:#b3261e;--grn:#1f7a4f;--grid:rgba(90,70,20,.06)}
+:root[data-theme="dark"]{--bg:#0a0e13}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--bg)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Cairo',Tahoma,Arial,sans-serif;line-height:1.7;
+background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px}
+.sheet{max-width:960px;margin:0 auto;background:var(--panel);border:1px solid var(--line);position:relative;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.sheet:before,.sheet:after{content:"";position:absolute;width:26px;height:26px;border:2px solid var(--gold);pointer-events:none;z-index:2}
+.sheet:before{top:8px;right:8px;border-left:0;border-bottom:0}
+.sheet:after{bottom:8px;left:8px;border-right:0;border-top:0}
+.wm{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(70px,16vw,170px);font-weight:900;color:var(--gold);opacity:.035;transform:rotate(-24deg);pointer-events:none;white-space:nowrap}
+.band{background:repeating-linear-gradient(-45deg,var(--red) 0 12px,#1a0d0d 12px 24px);height:8px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 20px;background:#1a0d0d;color:#ff8a84;font-size:12px;font-weight:700;letter-spacing:.12em}
+.top span:last-child{font-family:ui-monospace,Consolas,monospace;direction:ltr}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:24px 28px;border-bottom:1px solid var(--line);position:relative}
+.org{display:flex;align-items:center;gap:14px}
+.emb{width:60px;height:60px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-size:26px;position:relative;background:radial-gradient(circle,rgba(201,162,75,.15),transparent 70%)}
+.emb:after{content:"";position:absolute;inset:5px;border:1px dashed var(--gold);border-radius:50%;opacity:.6}
+.org h1{margin:0;font-size:22px;font-weight:900}
+.org p{margin:0;font-size:12px;color:var(--gold);font-weight:600}
+.meta{font-size:12px;color:var(--mut);text-align:left;direction:ltr;font-family:ui-monospace,Consolas,monospace;line-height:1.9}
+.meta b{color:var(--gold2)}
+main{padding:28px;position:relative;z-index:1}
